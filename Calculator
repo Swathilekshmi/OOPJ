@@ -1,0 +1,100 @@
+import java.awt.*;
+
+//import java.awt.event;
+public class Calculator extends Frame {
+	Button button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11,
+			button12, button13, button14, button15, button16, button17;
+	/*
+	 * t1 = new Textfield (20); add(t1);
+	 */
+	TextField textfield;
+
+	Calculator() {
+		setTitle("Calculator");
+		setVisible(true);
+		setSize(1000, 1000);
+		setLayout(null);
+		/*
+		 * GridLayout gridLayout = new GridLayout(4,5); setLayout(gridLayout); Panel p =
+		 * new Panel( new GridLayout(3,2,0,0));
+		 */
+		Label l1 = new Label();
+		l1.setBackground(Color.LIGHT_GRAY);
+		l1.setBounds(50, 50, 260, 60);
+		add(l1);
+		/*
+		 * textfield = new TextField(40); // textfield.setAlignment(TextField.CENTER);
+		 * add(textfield); // add(p);
+		 */
+		button1 = new Button("0");
+		button1.setBounds(60, 120, 50, 50);
+		add(button1);
+		button2 = new Button("1");
+		button2.setBounds(120, 120, 50, 50);
+		add(button2);
+		button3 = new Button("2");
+		button3.setBounds(180, 120, 50, 50);
+		add(button3);
+		button11 = new Button("+");
+		add(button11);
+		button11.setBounds(240, 120, 50, 50);
+		button4 = new Button("3");
+		button4.setBounds(60, 180, 50, 50);
+		add(button4);
+		button5 = new Button("4");
+		button5.setBounds(120, 180, 50, 50);
+		add(button5);
+		button6 = new Button("5");
+		button6.setBounds(180, 180, 50, 50);
+		add(button6);
+		button12 = new Button("-");
+		button12.setBounds(240, 180, 50, 50);
+		add(button12);
+		button7 = new Button("6");
+		button7.setBounds(60, 240, 50, 50);
+		add(button7);
+		button8 = new Button("7");
+		button8.setBounds(120, 240, 50, 50);
+		add(button8);
+		button9 = new Button("8");
+		button9.setBounds(180, 240, 50, 50);
+		add(button9);
+		button13 = new Button("*");
+		button13.setBounds(240, 240, 50, 50);
+		add(button13);
+		button10 = new Button("9");
+		button10.setBounds(60, 300, 50, 50);
+		add(button10);
+		button13 = new Button(".");
+		button13.setBounds(120, 300, 50, 50);
+		add(button13);
+		button14 = new Button("/");
+		button14.setBounds(180, 300, 50, 50);
+		add(button14);
+		button15 = new Button("C");
+		button15.setBounds(240, 300, 50, 50);
+		add(button15);
+		button17 = new Button("=");
+		button17.setBounds(160, 360, 50, 50);
+		add(button17);
+
+		/*
+		 * button1.addActionListener(this); button1.addActionListener(this);
+		 * button1.addActionListener(this); button1.addActionListener(this);
+		 * button1.addActionListener(this); button1.addActionListener(this);
+		 * button1.addActionListener(this); button1.addActionListener(this);
+		 * button1.addActionListener(this); button1.addActionListener(this);
+		 * button1.addActionListener(this); button1.addActionListener(this);
+		 * button1.addActionListener(this);
+		 * 
+		 * 
+		 * } public void actionPerformed(ActionEvent e) {
+		 * 
+		 * }
+		 */
+	}
+
+	public static void main(String[] args) {
+		Calculator calculator = new Calculator();
+	}
+}
